@@ -1,9 +1,22 @@
-let numero1: number = Number(prompt("ingrese numero 1"));
-let numero2: number = Number(prompt("ingrese numero 2"));
+let numeroUno: number = Number(prompt("ingrese un numero"));
+let numeroDos: number = Number(prompt("ingrese otro numero"));
+
 let suma: number = 0;
 
-for (let indice: number = numero1; indice <= numero2; indice++) {
-  suma = suma + indice;
-}
+if (numeroUno > numeroDos) {
+  let numeroMayor: number = numeroUno;
+  let numeroMenor: number = numeroDos;
 
-console.log(suma);
+  for (let indice: number = numeroMenor; indice <= numeroMayor; indice++) {
+    suma = suma + indice;
+  }
+  console.log(suma);
+} else {
+  let numeroMayor: number = numeroDos;
+  let numeroMenor: number = numeroUno;
+
+  for (let indice: number = numeroMenor; indice <= numeroMayor; indice++) {
+    suma = suma + indice;
+  }
+  console.log(suma);
+}
