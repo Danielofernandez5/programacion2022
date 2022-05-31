@@ -35,4 +35,9 @@ let posicionAlumno: number = obtenerPosicion("B");
 
 cargarDatos();
 let alumno: string = prompt("Ingrese alumno: ");
-console.log("El promedio del alumno "+alumno+ " es :" obtenerPromedioAlumno(obtenerPosicion(alumno)));
+console.log(
+  "El promedio del alumno " +
+    alumno +
+    " es :" +
+    obtenerPromedioAlumno(obtenerPosicion(alumno))
+);
