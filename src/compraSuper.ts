@@ -1,6 +1,6 @@
 function cargarProductos(arrayProducto: string[]): void {
   for (let i: number = 0; i < arrayProducto.length; i++) {
-    arrayProducto[i] = prompt("Ingrese prodcuto " + i + " en el carrito");
+    arrayProducto[i] = prompt("Ingrese producto " + i + " en el carrito");
   }
 }
 
@@ -36,7 +36,7 @@ function cargarCantidadProductos(arrayCantidadProductos: number[]): void {
 }
 
 let cantidadProductos: number = Number(
-  prsompt("ingrese cantidad de productos a comprar: ")
+  prompt("ingrese cantidad de productos a comprar: ")
 );
 let listaProductos: string[] = new Array(cantidadProductos);
 let precioProductos: number[] = new Array(cantidadProductos);
