@@ -67,7 +67,7 @@ function imprimirCompra(): void {
 }
 
 let cantidadProductos: number = Number(
-  prsompt("ingrese cantidad de productos a comprar: ")
+  prompt("ingrese cantidad de productos a comprar: ")
 );
 let listaProductos: string[] = new Array(cantidadProductos);
 let precioProductos: number[] = new Array(cantidadProductos);
